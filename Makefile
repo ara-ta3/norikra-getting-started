@@ -5,6 +5,7 @@ init:
 	vagrant up
 	gem install bundler
 	bundler install
+	fluent-gem install fluent-plugin-norikra
 
 itamae:
 	itamae ssh \
