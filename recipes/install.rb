@@ -27,9 +27,3 @@ execute "Install Norikra" do
   not_if "test $(which norikra)"
 end
 
-execute "Install fluentd" do
-  command sprintf("PATH=%s:$PATH;gem install fluentd", jruby_bin)
-  not_if "test $(which fluentd)"
-end
-
-
